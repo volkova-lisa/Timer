@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/stepa/AndroidStudioProjects/Timer/app/src/main/res/layout/activity_main.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/stepa/AndroidStudioProjects/Timer/app/src/main/res/layout/activity_start.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/stepa/AndroidStudioProjects/Timer/app/src/main/res/layout/thread_timer.xml" value="0.2105978260869565" />
       </map>
     </option>
   </component>

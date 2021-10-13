@@ -5,13 +5,13 @@ import android.os.PersistableBundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.timer.databinding.ActivityMainBinding
+import com.example.timer.databinding.ThreadTimerBinding
 
-class MainActivity : AppCompatActivity() {
+class TimerThread : AppCompatActivity() {
 
     private val START_TIME_IN_MILLIS: Long = 600000
 
-    private var _binding: ActivityMainBinding? = null
+    private var _binding: ThreadTimerBinding? = null
     val mBinding get() = _binding!!
 
     lateinit var startButton: Button
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityMainBinding.inflate(layoutInflater)
+        _binding = ThreadTimerBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
 
         startButton = mBinding.startBtn
