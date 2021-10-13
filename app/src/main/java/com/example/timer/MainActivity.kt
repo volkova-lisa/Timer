@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     val mBinding get() = _binding!!
 
     lateinit var startButton: Button
+    var startPressed : Boolean = true
     lateinit var resetButton : Button
     lateinit var countDownTextView : TextView
     lateinit var countDownTimer: CountDownTimer
@@ -38,6 +39,9 @@ class MainActivity : AppCompatActivity() {
 
         startButton.setOnClickListener {
             countDownTimer.start()
+            if (startPressed) startButton.text = "Stop"
+            else startButton.text = "Start"
+            startPressed = !startPressed
         }
     }
 
